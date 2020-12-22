@@ -1,0 +1,12 @@
+DB:
+   HOST: localhost
+   USER: hr
+   PASS: hr
+   NAME: userapi
+   
+PORT: 1521
+spring:
+     datasource:
+             url: "jdbc:oracle:thin://localhost:${PORT}/${DB.NAME}"
+             username: ${DB.USER}
+             password: ${DB.PASS}
